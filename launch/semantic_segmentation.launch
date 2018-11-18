@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <arg name="weight_path"
+       default="$(find semantic_segmentation)/model/deeplabv3_mnv2_cityscapes_train/frozen_inference_graph.pb"/>
+
+  <node pkg="semantic_segmentation"
+        type="semantic_segmentation_node.py"
+        name="semantic_segmentation_node"
+        output="screen">
+    <param name="weight_path" value="$(arg weight_path)" type="str"/>
+    <param name="publish_debug_image" value="True" type="bool"/>
+
+    <remap from="image" to="/device_0/sensor_1/Color_0/image/data" />
+  </node>
+
+</launch>

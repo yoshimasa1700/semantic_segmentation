@@ -1,0 +1,3 @@
+[submodule "scripts/deeplab_cityscapes"]
+	path = scripts/deeplab_cityscapes
+	url = https://github.com/yoshimasa1700/deeplab_cityscapes.git
