@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+  <name>semantic_segmentation</name>
+  <version>0.0.1</version>
+  <description>
+    Semantic segmentation package.
+  </description>
+  <maintainer email="m.yoshi.1700@gmail.com">Masahiko Toyoshi</maintainer>
+  <license>BSD</license>
+
+  <author>Masahiko Toyoshi</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <test_depend>python-mock</test_depend>
+</package>
